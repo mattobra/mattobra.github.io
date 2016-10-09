@@ -12,10 +12,23 @@
     authorize: true
     onLoad: onLinkedInLoad
     lang: en_US
-</script>
+</script>	
+	</head>
+	<body class="two">
+		
+		<nav>
+			<ul>
+				<a href="#">Home</a>
+				<a href="#" class="active">Search</a>
+				<a href="#">Tips & Advice</a>
+			</ul>
+		</nav>
+		<div class="blank">
+		</div>
 		
 		
-	  	  <script type="text/javascript">
+		
+		  <script type="text/javascript">
 
     // Setup an event listener to make an API call once auth is complete
     function onLinkedInLoad() {
@@ -34,28 +47,10 @@
 	     IN.API.Raw("/people/~:(firstName)").result(onSuccess).error(onError);
 
     }
-	      window.onload =function() {
-
-         document.getElementById("first").innerHTML= getProfileData();
-	    }
+	   
 
     
 			  
-			 
-
-		
-		
-	</head>
-	<body class="two">
-		<nav>
-			<ul>
-				<a href="#">Home</a>
-				<a href="#" class="active">Search</a>
-				<a href="#">Tips & Advice</a>
-			</ul>
-		</nav>
-		<div class="blank">
-		</div>
 		
 		<div class="footer">
 			<p>Hi (getProfileData()),</p>
@@ -70,7 +65,8 @@
 		</div>
 
 		<script src= "js/script.js"></script>
+		</script>
 	</body>
 		
 </html>
-		</script>
+		
