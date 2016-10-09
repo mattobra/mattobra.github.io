@@ -1,27 +1,48 @@
 body{
-	background-image: url("../img/coffee_bg.jpg");
-    background-repeat: no-repeat;
+  	background-repeat: no-repeat;
     background-position: right top;
     background-size: cover;
     background-attachment: fixed;
-  	font-family: "Avenir", Sans-serif;
+    font-family: "Avenir", Sans-serif;
   	text-decoration: none;
   	font-size: 18px;
   	line-height: 1.5;
 }
 
+.home{
+	background-image: url("../img/coffee_bg.jpg");  
+}
+
+.two{
+	background-image: url("../img/meeting.jpg");
+	background-size: contain;
+}
+.three{
+	background-image: url("../img/women-tea.jpeg");
+	background-size: cover;
+}
+
+.four{
+	background: white;
+}
+
 nav{
 	background-color: #1E763A;
-	text-align: right;
 	padding-top: 20px;
 	padding-bottom: 20px;
+	text-align: right;
 }
+
 
 a{
 	font-size: 16pt;
 	color: white;
 	text-decoration: none;
 	padding-right: 15px;
+}
+
+a .active{
+	text-decoration: underline;
 }
 
 h1{
@@ -34,6 +55,12 @@ h1{
 .title{
 	padding-bottom: 125px;
 }
+
+
+.blank{
+	padding: 3% 25% 35% 25%;
+}
+
 
 .main{
 	padding-top: 20px;
@@ -55,6 +82,94 @@ h1{
 }
 
 .footer{
-	padding: 20px 15px 20px 15px;
+	padding: 3% 25% 10% 25%;
 	background-color: #E5E5E2;
 	text-align: center;
+}
+
+/*.footer p{
+	max-width: 800px;
+	display: inline-block;
+}
+*/
+
+
+.form-style-6{
+    font: 95% Arial, Helvetica, sans-serif;
+    max-width: 400px;
+    margin: 10px auto;
+    padding: 16px;
+    background: #F7F7F7;
+}
+
+.form-style-6 input[type="text"],
+.form-style-6 input[type="date"],
+.form-style-6 input[type="datetime"],
+.form-style-6 input[type="email"],
+.form-style-6 input[type="number"],
+.form-style-6 input[type="search"],
+.form-style-6 input[type="time"],
+.form-style-6 input[type="url"],
+.form-style-6 textarea,
+.form-style-6 select 
+{
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    background: #fff;
+    margin-bottom: 4%;
+    border: 1px solid #ccc;
+    padding: 3%;
+    color: #555;
+    font: 95% Arial, Helvetica, sans-serif;
+}
+.form-style-6 input[type="text"]:focus,
+.form-style-6 input[type="date"]:focus,
+.form-style-6 input[type="datetime"]:focus,
+.form-style-6 input[type="email"]:focus,
+.form-style-6 input[type="number"]:focus,
+.form-style-6 input[type="search"]:focus,
+.form-style-6 input[type="time"]:focus,
+.form-style-6 input[type="url"]:focus,
+.form-style-6 textarea:focus,
+.form-style-6 select:focus
+{
+    box-shadow: 0 0 5px #43D1AF;
+    padding: 3%;
+    border: 1px solid #43D1AF;
+}
+
+.form-style-6 input[type="submit"],
+.form-style-6 input[type="button"]{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    padding: 3%;
+    background: #1E763A;
+    border-bottom: 2px solid #124622;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;    
+    color: #fff;
+}
+.form-style-6 input[type="submit"]:hover,
+.form-style-6 input[type="button"]:hover{
+    background: #78ac88;
+}
+
+.template{
+    font: 95% Arial, Helvetica, sans-serif;
+    max-width: 600px;
+    margin: 10px auto;
+    padding: 16px;
+    background: #F7F7F7;
+}
+
+</style>
