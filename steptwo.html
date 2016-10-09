@@ -22,6 +22,7 @@
     }
     // Handle the successful return from the API call
     function onSuccess(data) {
+	    String(data);
         console.log(data);
     }
     // Handle an error response from the API call
@@ -30,7 +31,7 @@
     }
     // Use the API call wrapper to request the member's basic profile data
     function getProfileData() {
-	     return String(IN.API.Raw("/people/~:(firstName)?format=JSON").result(onSuccess).error(onError));
+	     return IN.API.Raw("/people/~:(firstName)?format=JSON").result(onSuccess).error(onError);
     }
 				    window.onload = function() {
 	    document.getElementById("demo").innerHTML = String(getProfileData());
