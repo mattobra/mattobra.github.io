@@ -73,5 +73,37 @@
 		</div>
 		
 
+		<div class="pagetwo">
+			<p>Hi (id="demo"),</p>
+			<p>In order for us to help you craft the best message possible, please indicate which of your skills you’re trying to grow:</p>
+			<div class="form-style-6">
+				<input type="text" id="skill1" value="Skill#1"><br>
+				<input type="text" id="skill2" value="Skill#2"><br>
+					<input type="submit" id = "skills" value="Submit">
+			</div>
+		</div>
+
+		<script src= "js/script.js"></script>
+		
+			<div class="blank">
+			<p>Great! Let’s get you that coffee meeting. Based on the skills you want to improve, here’s the perfect introduction message you can send to (firstnamefieldname). </p>
+			<div class="template">
+				<div class="subject">
+					<p>Subject: Coffee and (company)?</p>
+				</div>
+				<textarea class="templateBody" id="foo"> <!--Hi <?php echo $_POST["Skill#1"]; ?>,
+My name is YOUR NAME HERE and I’m currently a (position) at (company). We met at ________ and I would love to learn more about what you do and how you got there. Is there a good time for us to meet for coffee?
+YOUR NAME & EMAIL-->
+				</textarea> 
+					<button class="btn">Copy</button>
+				    <script>
+	    				$("button").click(function(){
+	    				$("textarea").select();
+	    				document.execCommand('copy');
+						});
+    				</script>
+			</div>
+		</div>
+		
 	</body>
 </html>
