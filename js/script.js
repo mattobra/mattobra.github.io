@@ -13,7 +13,7 @@ var skill1;
 var skill2;
  
 
-$("#skills").click(
+$("#anchor #skills").click(
 function(){
 skill1 = $("#skill1").val();
 skill2= $("#skill2").val();
