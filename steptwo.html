@@ -15,28 +15,25 @@
 </script>
 		
      <script type="text/javascript">
-	     
-
+    
     // Setup an event listener to make an API call once auth is complete
     function onLinkedInLoad() {
-        IN.Event.on(IN, "auth", getProfileData);
+        IN.Event.on(IN, "auth", onLinkedInAuth);
     }
+
     // Handle the successful return from the API call
-    function onSuccess(data) {
-        console.log(data);
-	  
-	    
+    function onLinkedInAuth() {
+        IN.API.Profile("me").result(displayProfiles);
     }
+
     // Handle an error response from the API call
-    function onError(error) {
-        console.log(error);
-    }
-    // Use the API call wrapper to request the member's basic profile data
-    function getProfileData() {
-	     IN.API.Raw("/people/~:(firstName)").result(onSuccess).error(onError);
-    }
-		
-	   
+    function displayProfiles(profiles) {
+member = profiles.values[0];
+document.getElementById("profiles").innerHTML = "<p id=\"" + member.id + "\">Hello" + member.firstname + " " + member.lastname + "</p>";
+   }
+
+  
+
 </script>		
 			 
 	</head>
