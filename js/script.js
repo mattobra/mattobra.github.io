@@ -17,5 +17,5 @@ skill1 = $("#skill1").val();
 skill2= $("#skill2").val();
  console.log(skill1,skill2);}
 );
-$('textarea').html("Hi"+ String(skill1) + " ,My name is YOUR NAME HERE and I’m currently a (position) at (company). We met at"+skill2+"this event")
+$('textarea').html("Hi"+ skill1.toString() + " ,My name is YOUR NAME HERE and I’m currently a (position) at (company). We met at"+skill2+"this event")
 })
