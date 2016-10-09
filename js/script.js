@@ -8,10 +8,13 @@ $("#start").click(
 function(){
 location.replace(LinkedinAuth)
 }
-);
+)
+var skill1;
+var skill2;
 var pullskills = function(){
-var skill1 = $("#skill1").val();
-var skill2 = $("#skill2").val();
-}
+skill1 = $("#skill1").val();
+skill2= $("#skill2").val();
+console.log(skill1,skill2)}
+
 $("a[value=submit]").click(pullskills);
 })
