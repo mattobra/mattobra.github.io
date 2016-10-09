@@ -11,10 +11,12 @@ location.replace(LinkedinAuth)
 )
 var skill1;
 var skill2;
-var pullskills = function(){
+ 
+
+$("#skills").click(
+function(){
 skill1 = $("#skill1").val();
 skill2= $("#skill2").val();
 console.log(skill1,skill2)}
-
-$("#skills").click(pullskills);
+);
 })
