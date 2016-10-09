@@ -33,6 +33,8 @@
     // Use the API call wrapper to request the member's basic profile data
     function getProfileData() {
 	    firstname= IN.API.Raw("/people/~:(firstName)").result(onSuccess).error(onError);
+	    	              console.log(firstname);
+
     }
 	      window.onload =function() {
 	              console.log(firstname);
