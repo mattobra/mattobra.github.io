@@ -16,5 +16,5 @@ skill1 = $("#skill1").val();
 skill2= $("#skill2").val();
 console.log(skill1,skill2)}
 
-$("a[value=submit]").click(pullskills);
+$("#skills").click(pullskills);
 })
