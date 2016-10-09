@@ -6,7 +6,7 @@
 		<link rel="stylesheet" href="css/styles.css">
 		<title>MessageMentor | A Lady Problems Hackathon Project</title>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-		
+
 		
 	</head>
 	<body class="four">
@@ -23,14 +23,17 @@
 				<div class="subject">
 					<p>Subject: Coffee and (company)?</p>
 				</div>
-				<div class="templateBody">
-					<p>Hi (theirfirstnamefieldname),</p>
-					<p>My name is (firstnamefieldname) and I’m currently the (position) at (company). I came across your profile on LinkedIn and I am reaching out to see if you would be open to grab a coffee sometime in the next few days.</p>
-					<p>I was very impressed by your trajectory and the companies you've worked for. Currently, I’m looking to expand my (skill from other page) and my (skill from other page) skills.</p>
-					<p>I understand you must be extremely busy and I can make arrangements to meet at a time that is convenient for you. Thank you in advance for your time. I look forward to hearing from you soon.</p>
-					<p>Sincerely,<p>
-					<p>(firstnamefieldname)(lastnamefieldname) Cell:<br></p>
-				<input type="submit" value="Submit">
+				<textarea class="templateBody" id="foo">Hi ________,
+My name is YOUR NAME HERE and I’m currently a (position) at (company). We met at ________ and I would love to learn more about what you do and how you got there. Is there a good time for us to meet for coffee?
+YOUR NAME & EMAIL
+				</textarea> 
+					<button class="btn">Copy</button>
+				    <script>
+	    				$("button").click(function(){
+	    				$("textarea").select();
+	    				document.execCommand('copy');
+						});
+    				</script>
 			</div>
 		</div>
 		
