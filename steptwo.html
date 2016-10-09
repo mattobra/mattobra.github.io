@@ -28,7 +28,7 @@ var company;
        name=data.firstName;
        industry = data.industry;
        occupation = data.positions.values[0].title;
-	company = data.positions.values[0].company;
+	company = data.positions.values[0].company.name;
 	 $(document).ready(function(){
 	   var skill1;
            var skill2;
