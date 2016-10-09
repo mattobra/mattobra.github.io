@@ -15,7 +15,7 @@
 </script>
 		
  <script type="text/javascript">
-    var name, occupation,industry
+    var name, occupation,industry;
     // Setup an event listener to make an API call once auth is complete
     function onLinkedInLoad() {
         IN.Event.on(IN, "auth", getProfileData);
@@ -24,8 +24,8 @@
     function onSuccess(data) {
        name=data.firstName;
        industry = data.industry;
-       occupation = data.positions.values["0"].title
-	    console.log(data)
+       occupation = data.positions.values["0"].title;
+	    console.log(data);
     }
     // Handle an error response from the API call
     function onError(error) {
