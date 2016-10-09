@@ -13,5 +13,5 @@ var pullskills = function(){
 var skill1 = $("#skill1").val();
 var skill2 = $("#skill2").val();
 }
-
+$("a[value=submit]").click(pullskills);
 })
