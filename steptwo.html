@@ -30,6 +30,8 @@
     // Use the API call wrapper to request the member's basic profile data
     function getProfileData() {
         var firstname = IN.API.Raw("/people/~:(firstName)").result(onSuccess).error(onError);
+	    console.log(firstname);
+
     }
 			  
 			  window.onload =function(){
@@ -53,7 +55,6 @@
 		<div class="footer">
 			<p>Hi (id="first"),</p>
 			<p>In order for us to help you craft the best message possible, please indicate which of your skills you’re trying to grow:</p>
-console.log(firstname);
 			<div class="form-style-6">
 				<input type="text" id="skill1" value="Skill #1"><br>
 				<input type="text" id="skill2" value="Skill #2"><br>
