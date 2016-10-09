@@ -16,7 +16,7 @@ var skill2;
 $("#skills").click(
 function(){
 skill1 = $("#skill1").val();
-skill2= $("#skill2").val();}
+skill2= $("#skill2").val();
+ console.log(skill1,skill2);}
 );
-  console.log(skill1);
 })
