@@ -15,7 +15,9 @@
 </script>
 		
  <script type="text/javascript">
-    var name, occupation,industry;
+    var name; 
+	var occupation;
+ var industry;
     // Setup an event listener to make an API call once auth is complete
     function onLinkedInLoad() {
         IN.Event.on(IN, "auth", getProfileData);
