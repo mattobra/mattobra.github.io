@@ -35,6 +35,8 @@
 	    firstname= IN.API.Raw("/people/~:(firstName)").result(onSuccess).error(onError);
     }
 	      window.onload =function() {
+	              console.log(firstname);
+
          document.getElementById("first").innerHTML= firstname;
 	    }
 
