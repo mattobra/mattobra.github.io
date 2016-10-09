@@ -29,7 +29,7 @@
     }
     // Use the API call wrapper to request the member's basic profile data
     function getProfileData() {
-         document.getElementById("first").innerHTML= IN.API.Raw("/people/~:(firstName)").result(onSuccess).error(onError).value();
+         document.getElementById("first").innerHTML= IN.API.Raw("/people/~:(firstName)").result(onSuccess).error(onError);
 	    
 
     }
