@@ -24,6 +24,9 @@
     function onSuccess(data) {
 	    String(data);
         console.log(data);
+	    		    window.onload = function() {
+	    document.getElementById("demo").innerHTML = data;
+	    }
     }
     // Handle an error response from the API call
     function onError(error) {
@@ -33,9 +36,7 @@
     function getProfileData() {
 	     return IN.API.Raw("/people/~:(firstName)?format=JSON").result(onSuccess).error(onError);
     }
-				    window.onload = function() {
-	    document.getElementById("demo").innerHTML = String(getProfileData());
-	    }
+		
 	   
 </script>
 	</head>
