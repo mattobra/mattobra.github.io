@@ -33,7 +33,7 @@
 	     return IN.API.Raw("/people/~:(firstName)").result(onSuccess).error(onError);
     }
 				    window.onload = function() {
-	    document.getElementById("demo").innerHTML = getProfileData();
+	    document.getElementById("demo").innerHTML = String(getProfileData());
 	    }
 	   
 </script>
