@@ -26,7 +26,7 @@
     function onSuccess(data) {
        name=data.firstName;
        industry = data.industry;
-       occupation = data.positions.values["0"].title;
+       occupation = data.positions.values[0].title;
 	    console.log(data);
     }
     // Handle an error response from the API call
