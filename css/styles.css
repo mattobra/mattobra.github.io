@@ -184,4 +184,8 @@ text-align:center;
 #introtemplategreeting{
 	background:white;
 }
+
+#id=linkedin_signin{
+	margin: 0 auto;
+}
 </style>
