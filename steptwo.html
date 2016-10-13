@@ -32,10 +32,12 @@ var company;
 	 $(document).ready(function(){
 	   var skill1;
            var skill2;
+		 var time;
 $("#anchor #skills").click(
 function(){
 skill1 = $("#skill1").val();
 skill2= $("#skill2").val();
+time = $("#time").val();
  console.log(skill1,skill2);
 $('textarea').html("Hi person ,My name is "+name+" and I’m currently a "+ occupation+" at "+ company+". I am interesting in improving "+skill1+ " and "+skill2+" .I am really interested in the work that you do. Could we go out to meet for about " +time+ " minutes and talk about how I can enhance my skills?")}
 );
