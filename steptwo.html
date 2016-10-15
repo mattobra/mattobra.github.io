@@ -81,16 +81,16 @@ $('textarea').html("Hi (Enter Persons Name Here) ,My name is "+firstname +" " +l
 
 							<!-- <a href="stepthree.html" id = "anchor"> </a>-->
   
-		
+		<form>
 		<div class="footer">
 			<p id = "greeting"></p>
 			<p>In order for us to help you craft the best message possible, please indicate which of your skills you’re trying to grow:</p>
 			<div class="form-style-6">
-				<form>
+				
 				<input type="text" id="skill1" placeholder="Enter Skill #1" required/><br>
-				<input type="text" id="skill2" placeholder="Enter Skill #2"><br>
-				 <a href= "#thirdstep" id = "anchor"><input type="submit" id = "skills" value="Submit"></a> 
-				</form>
+				<input type="text" id="skill2" placeholder="Enter Skill #2" required/><br>
+				<!-- <a href= "#thirdstep" id = "anchor"><input type="submit" id = "skills" value="Submit"></a> -->
+				
 			</div>
 		</div>
 		
@@ -98,7 +98,7 @@ $('textarea').html("Hi (Enter Persons Name Here) ,My name is "+firstname +" " +l
 	
 			<p>How long would you like to meet? (maximum: 60 minutes)</p>
 			<div class="form-style-6">
-				<input type="number" id="time" min=1 max=60 placeholder="Enter time(in minutes)"><br>
+				<input type="number" id="time" min=1 max=60 placeholder="Enter time(in minutes)" required/><br>
 			<!--	<a href= "#fourthstep" id = "anchor"><input type="submit" id = "skills" value="Submit"></a> -->
 			</div>
 		</div>
@@ -108,9 +108,9 @@ $('textarea').html("Hi (Enter Persons Name Here) ,My name is "+firstname +" " +l
 	
 			<p>Choose 3 words to describe this person:</p>
 			<div class="form-style-6">
-				<input type="text" id="a1" placeholder="Enter Attribute #1"><br>
-				<input type="text" id="a2" placeholder="Enter Attribute #2"><br>
-				<input type="text" id="a3" placeholder="Enter Attribute #3"><br>
+				<input type="text" id="a1" placeholder="Enter Attribute #1" required/><br>
+				<input type="text" id="a2" placeholder="Enter Attribute #2" required/><br>
+				<input type="text" id="a3" placeholder="Enter Attribute #3"required/><br>
 				<!--<a href= "#fifthstep" id = "anchor"><input type="submit" id = "attribute" value="Submit"></a> -->
 			</div>
 		</div>
@@ -125,7 +125,9 @@ $('textarea').html("Hi (Enter Persons Name Here) ,My name is "+firstname +" " +l
 		</div>-->
 		<div class="form-style-6">
 		<a href= "#thirdstep" id = "anchor"><input type="submit" id = "skills" value="Submit"></a>
-		</div
+			</div>
+			</form>
+		
 			<div class="blank" id = "thirdstep">
 			<div class="linkedinsearch">
 			<div id ="introtemplategreeting"><p >Great! Let’s get you that coffee meeting. Based on the skills you want to improve, here’s the perfect introduction message you can send to your new potential mentor. </p> </div>
