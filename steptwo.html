@@ -61,14 +61,7 @@ $('textarea').html("Hi (Enter Persons Name Here) ,My name is "+firstname +" " +l
        IN.API.Raw("/people/~:(id,firstName,lastName,industry,specialties,positions~:(title,company:(name)))").result(onSuccess).error(onError);
     }
 	
-	 var form = document.getElementById('formID');
-	/*form.noValidate=true; */
-	 form.addEventListener('submit', function(event){
-	 	if(!event.target.checkValidity()){
-			event.preventDefault();
-			alert('Complete Form');
-		}
-	 }, false);
+	
 	 
 </script>		
 			 
@@ -90,7 +83,7 @@ $('textarea').html("Hi (Enter Persons Name Here) ,My name is "+firstname +" " +l
 
 							<!-- <a href="stepthree.html" id = "anchor"> </a>-->
   
-		<form action="" method="POST" id="formID">
+		<form >
 		<div class="footer">
 			<p id = "greeting"></p>
 			<p>In order for us to help you craft the best message possible, please indicate which of your skills you’re trying to grow:</p>
