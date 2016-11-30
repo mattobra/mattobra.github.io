@@ -34,7 +34,6 @@ var occupation;
        industry = data.industry;
        occupation = data.positions.values[0].title;
 	company = data.positions.values[0].company.name;
-	 $(document).ready(function(){
 	   var skill1;
            var skill2;
 		 var time;
@@ -53,8 +52,6 @@ a3 = $("#a3").val();
 $('textarea').html("Hi (Enter Persons Name Here) ,My name is "+firstname +" " +lastname +" and I’m currently a "+ occupation+" at "+ company+". I am interested in improving "+skill1+ " and "+skill2+" .I am really interested in the work that you do. You are a " +a1+", "+a2+" and "+a3+ " person. Could we go out to meet for about " +time+ " minutes and talk about how I can enhance my skills?")}
 );
      $("#greeting").html("<p>Hi "+ firstname +",<p>")
- 
-   });
     }
     // Handle an error response from the API call
     function onError(error) {
